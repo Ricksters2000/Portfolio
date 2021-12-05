@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import ProjectImgs from '../Image/ProjectImgs';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -80,7 +81,7 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
-                      <a
+                      {/* <a
                         href={url || '#!'}
                         target="_blank"
                         aria-label="Project Link"
@@ -99,11 +100,12 @@ const Projects = () => {
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
                         >
-                          <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
+                          <div data-tilt className="thumbnail rounded"> */}
+                            {/* <ProjectImg alt={title} filename={img} /> */}
+                            <ProjectImgs images={img} alt={title} />
+                          {/* </div>
                         </Tilt>
-                      </a>
+                      </a> */}
                     </div>
                   </Fade>
                 </Col>
