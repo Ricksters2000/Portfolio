@@ -1,5 +1,5 @@
 import messageInteraction from './message-interaction.gif';
 import registering from './registering.gif';
-import gameplay from './gameplay.png';
+import gameplay from './game-play.png';
 
 export default [messageInteraction, registering, gameplay];
