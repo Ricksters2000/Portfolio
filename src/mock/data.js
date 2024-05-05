@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { nanoid } from 'nanoid';
 
 // HEAD DATA
@@ -28,12 +29,12 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'boardChat',
-    title: 'Board Chat',
-    info: 'This web app uses web sockets to allow users to communicate to each other through text. This as well has a feature to allow users to invite each other to a game like checkers. Users can create an account to have their own username and image displayed as well as to keep track of their wins.',
-    info2: '[html, css, javascript, react, express]',
-    url: 'https://board-chat-client.herokuapp.com/',
-    repo: 'https://github.com/Ricksters2000/board-chat-client', // if no repo, the button will not show up
+    img: 'bugTracker',
+    title: 'Bug Tracker',
+    info: 'This app will allow users to manage their projects with a team to track issues and search through tickets with ease as well as manage users and their roles within the team.',
+    info2: '[html, css, typescript, react, express, remix]',
+    url: 'https://bug-tracker-xbtb.onrender.com/',
+    repo: 'https://github.com/Ricksters2000/bug-tracker', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -52,6 +53,15 @@ export const projectsData = [
     info2: '[html, css, typescript, react, redux, express]',
     url: 'https://smart-brain-3-0.herokuapp.com/home',
     repo: 'https://github.com/Ricksters2000/smart-brain-ts', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'boardChat',
+    title: 'Board Chat',
+    info: 'This web app uses web sockets to allow users to communicate to each other through text. This as well has a feature to allow users to invite each other to a game like checkers. Users can create an account to have their own username and image displayed as well as to keep track of their wins.',
+    info2: '[html, css, javascript, react, express]',
+    url: 'https://board-chat-client.herokuapp.com/',
+    repo: 'https://github.com/Ricksters2000/board-chat-client', // if no repo, the button will not show up
   },
 ];
 
