@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Tilt from 'react-tilt';
 import { Carousel, CarouselItem } from 'react-bootstrap';
-import ProjectImg from './ProjectImg';
+// import ProjectImg from './ProjectImg';
 import imagePaths from '../../images/images';
 import './Image.css';
 
@@ -25,7 +25,7 @@ const ProjectImgs = ({ title, alt }) => {
           easing: 'cubic-bezier(.03,.98,.52,.99)',
         }}
       >
-        <ProjectImg alt={alt} filename={title} />
+        <div className="d-block img" aria-label={alt} style={{ backgroundImage: `url(${imgs})` }} />
       </Tilt>
     );
   //   return <div className="d-block img" style={{ backgroundImage: `url(${imgs})` }}></div>;
