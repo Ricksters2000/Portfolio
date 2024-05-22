@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
+// import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
+// import ProjectImg from '../Image/ProjectImg';
 import ProjectImgs from '../Image/ProjectImgs';
 
 const Projects = () => {
@@ -50,14 +50,16 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url}
+                        >
+                          See Live
+                        </a>
+                      )}
 
                       {repo && (
                         <a
@@ -101,9 +103,9 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded"> */}
-                            {/* <ProjectImg alt={title} filename={img} /> */}
-                            <ProjectImgs title={img} alt={title} />
-                          {/* </div>
+                      {/* <ProjectImg alt={title} filename={img} /> */}
+                      <ProjectImgs title={img} alt={title} />
+                      {/* </div>
                         </Tilt>
                       </a> */}
                     </div>

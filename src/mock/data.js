@@ -32,7 +32,7 @@ export const projectsData = [
     img: 'bugTracker',
     title: 'Bug Tracker',
     info: 'This app will allow users to manage their projects with a team to track issues and search through tickets with ease as well as manage users and their roles within the team.',
-    info2: '[html, css, typescript, react, express, remix]',
+    info2: '[html, css, typescript, react, express, remix, emotion.js]',
     url: 'https://bug-tracker-xbtb.onrender.com/',
     repo: 'https://github.com/Ricksters2000/bug-tracker', // if no repo, the button will not show up
   },
@@ -47,11 +47,20 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'fileSharer',
+    title: 'File Sharer',
+    info: 'An application to allow users to upload files and share those uploaded files to others. This utilizes server-sent events to display the upload progress when uploading files in real time.',
+    info2: '[html, css, typescript, react, vite, express, AWS S3]',
+    // url: 'https://smart-brain-3-0.herokuapp.com/home',
+    repo: 'https://github.com/Ricksters2000/smart-brain-ts', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'smartBrain',
     title: 'Smart Brain',
     info: 'This implements a face detection api from Clarifai in order to allow users to paste a link of an image and display where the faces are located at. Users can as well create an account to allow them to keep track of the amount of times they entered in an image to detect any faces.',
-    info2: '[html, css, typescript, react, redux, express]',
-    url: 'https://smart-brain-3-0.herokuapp.com/home',
+    info2: '[html, css, typescript, react, redux, express, AWS S3]',
+    // url: 'https://smart-brain-3-0.herokuapp.com/home',
     repo: 'https://github.com/Ricksters2000/smart-brain-ts', // if no repo, the button will not show up
   },
   {
@@ -59,8 +68,8 @@ export const projectsData = [
     img: 'boardChat',
     title: 'Board Chat',
     info: 'This web app uses web sockets to allow users to communicate to each other through text. This as well has a feature to allow users to invite each other to a game like checkers. Users can create an account to have their own username and image displayed as well as to keep track of their wins.',
-    info2: '[html, css, javascript, react, express]',
-    url: 'https://board-chat-client.herokuapp.com/',
+    info2: '[html, css, javascript, react, express, AWS S3]',
+    // url: 'https://board-chat-client.herokuapp.com/',
     repo: 'https://github.com/Ricksters2000/board-chat-client', // if no repo, the button will not show up
   },
 ];
